@@ -4,7 +4,7 @@
 
 ## About this project
 
-This data sets contained in this repository comprise workload metadata of a general task execution platform. The metadata consists of statically defined properties and runtime data.
+The data sets contained in this repository comprise workload metadata of a general task execution platform. The metadata consists of statically defined properties and runtime data.
 
 ## Requirements and Setup
 
