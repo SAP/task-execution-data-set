@@ -6,12 +6,10 @@
 
 The data sets contained in this repository comprise workload metadata of a general task execution platform. The metadata consists of statically defined properties and runtime data.
 
-## Requirements and Setup
+The `build-data.csv` contains Continuous Integration (CI) infrastructure data about resource usage of builds.
+The csv is separated by `;`, the exported fields are:
 
-build-data.csv contains CI Infrastructure data about resource usage of builds.
-The csv is separated by ";" the exported fields are:
-
-<pre>
+```
 atom_id           : uuid of build job
 time              : utc timestamp of build
 location          : cloud location id
@@ -29,7 +27,12 @@ cgroup            : executor cgroup uuid
 max_rss           : peak rss memory usage during the build (Bytes)
 max_cache         : peak page chache usage during the build (Bytes)
 memreq            : empirically pre-configured memory size of build container (Mega)
-</pre>
+```
+
+## Requirements and Setup
+
+There are not requirements or setup steps for this project.
+
 ## Support, Feedback, Contributing
 
 This project is open to feature requests/suggestions, bug reports etc. via [GitHub issues](https://github.com/SAP/task-execution-data-set/issues). Contribution and feedback are encouraged and always welcome. For more information about how to contribute, the project structure, as well as additional contribution information, see our [Contribution Guidelines](CONTRIBUTING.md).
