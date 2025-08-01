@@ -10,23 +10,25 @@ The `build-data.csv` contains Continuous Integration (CI) infrastructure data ab
 The csv is separated by `;`, the exported fields are:
 
 ```
-atom_id           : uuid of build job
-time              : utc timestamp of build
-location          : cloud location id
-memory_fail_count : kernel memory alloc fail counts during build
-branch            : branch which has been built
-buildProfile      : build profile that contains architecture, compiler, optimization level info
-jobs              : parallel build jobs (distributed compiler)
-localJobs         : local parallel build jobs (on executing node)
-makeType          : (dbg,opt,rel) - related to buildProfile but only indicating the build Type
-targets           : CMake target to build
-component         : Project that is being built
-ts_phase          : building or testing phase
-ts_status         : successful or unstable build
-cgroup            : executor cgroup uuid
-max_rss           : peak rss memory usage during the build (Bytes)
-max_cache         : peak page chache usage during the build (Bytes)
-memreq            : empirically pre-configured memory size of build container (Mega)
+atom_id              : uuid of build job
+time                 : utc timestamp of build
+location             : cloud location id
+memory_fail_count    : kernel memory alloc fail counts during build
+branch               : branch which has been built
+buildProfile         : build profile that contains architecture, compiler, optimization level info
+jobs                 : parallel build jobs (distributed compiler)
+localJobs            : local parallel build jobs (on executing node)
+makeType             : (dbg,opt,rel) - related to buildProfile but only indicating the build Type
+targets              : CMake target to build
+component            : Project that is being built
+ts_phase             : building or testing phase
+ts_status            : successful or unstable build
+cgroup               : executor cgroup uuid
+max_rss              : peak rss memory usage during the build (Bytes)
+max_cache            : peak page chache usage during the build (Bytes)
+memreq               : empirically pre-configured memory size of build container (Mega)
+maxmMemoryUsageBytes : peak rss+page cache usage during the build (Bytes), NULL/empty for old data
+refined_mem_mb       : prediction of LinearSVC if memory could be optimized (target: 50Gb with safety factor 2 or original requirement), NULL/empty for old data
 ```
 
 ## Requirements and Setup
