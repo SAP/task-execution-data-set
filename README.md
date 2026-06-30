@@ -48,6 +48,6 @@ We as members, contributors, and leaders pledge to make participation in our com
 
 ## Licensing
 
-Copyright 2025 SAP SE or an SAP affiliate company and task-execution-data-set contributors. Please see our [LICENSE](LICENSE) for copyright and license information. Detailed information including third-party components and their licensing/copyright information is available [via the REUSE tool](https://api.reuse.software/info/github.com/SAP/task-execution-data-set).
+Copyright 2025-2026 SAP SE or an SAP affiliate company and task-execution-data-set contributors. Please see our [LICENSE](LICENSE) for copyright and license information. Detailed information including third-party components and their licensing/copyright information is available [via the REUSE tool](https://api.reuse.software/info/github.com/SAP/task-execution-data-set).
 
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP/task-execution-data-set)](https://api.reuse.software/info/github.com/SAP/task-execution-data-set)
